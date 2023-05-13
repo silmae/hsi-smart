@@ -68,7 +68,7 @@ This is for comparisons in later phase.
 **4)** C++ program applies corresponding weights, biases and activation-function for input data on current layer and passes output of
 that layer to next. Following layer performs similar operations.
 
-- For each neuron, is applied principle of: y = activation(w * x + b), where:
+For each neuron, is applied principle of: y = activation(w * x + b), where:
 
 * y stands for the output of a single neuron
 * x represents the input data
