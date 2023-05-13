@@ -68,6 +68,14 @@ This is for comparisons in later phase.
 **4)** C++ program applies corresponding weights, biases and activation-function for input data on current layer and passes output of
 that layer to next. Following layer performs similar operations.
 
+- For each neuron, is applied principle of: y = activation(w * x + b), where:
+
+* y stands for the output of a single neuron
+* x represents the input data
+* b means bias term
+* w represents the weights
+* activation function applies a non-linear transformation to the output of the linear operation (w * x + b)
+
 **5)** Program saves output-values (predictions for each mnist image, passed to NN as .csv) to "/Cpp-Implementation/Output-Data".
 
 **6)** Optional: output values from tensorflow and Cpp-implementation (of same NN-structure) can be compared via correlation, by using
