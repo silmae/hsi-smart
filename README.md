@@ -2,7 +2,7 @@
 
 
 
-## High-level operation principles, demonstrating how Tensorflow-NN can be implented in C++:
+## High-level operation principles, demonstrating how trained Tensorflow-NN can be implented in C++:
 
 **1)** Python program (/Trained-NN-Python/**Simple_NN.py**) trains Tensorflow-NN with mnist-dataset, and saves weight and biases accordingly for each layer, to:
 - "/Cpp-Implementation/1st_Hidden"
