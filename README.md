@@ -4,8 +4,11 @@
 
 ## High-level operation principles, demonstrating how Tensorflow-NN can be implented in C++:
 
-1) Python program (/Trained-NN-Python/Simple_NN.py) trains Tensorflow-NN with mnist-dataset, and saves weight and biases accordingly for each
-layer, to: "/Cpp-Implementation/1st_Hidden", "/Cpp-Implementation/2nd_Hidden", "/Cpp-Implementation/3rd_Hidden", "/Cpp-Implementation/Output-Layer"
+1) Python program (/Trained-NN-Python/Simple_NN.py) trains Tensorflow-NN with mnist-dataset, and saves weight and biases accordingly for each layer, to:
+-"/Cpp-Implementation/1st_Hidden"
+-"/Cpp-Implementation/2nd_Hidden"
+-"/Cpp-Implementation/3rd_Hidden"
+-"/Cpp-Implementation/Output-Layer"
 
 Program also saves output-values/predictions for each image (in this case 10 first) to "/Cpp-Implementation/Tensorflow-Output-Values".
 This is for comparisons in later phase.
