@@ -10,8 +10,12 @@ Purpose of this entity is to demonstrate, how trained Tensorflow-NN can be imple
 - "/Cpp-Implementation/3rd_Hidden"
 - "/Cpp-Implementation/Output-Layer"
 
-Program also saves output-values/predictions for each image (in this case 10 first) to:
+Program also saves:
+
+output-values/predictions for each image (in this case 10 first) to:
 - "/Cpp-Implementation/Tensorflow-Output-Values".
+
+- 10 first images in Flatten state
 
 This is for comparisons in later phase.
 
@@ -76,7 +80,15 @@ For each neuron, is applied principle of: y = activation(w * x + b), where:
 * w represents the weights
 * activation function applies a non-linear transformation to the output of the linear operation (w * x + b)
 
-**5)** Program saves output-values (predictions for each mnist image, passed to NN as .csv) to "/Cpp-Implementation/Output-Data".
+For output-layer insteas, is applied: y = Softmax(x)
 
-**6)** Optional: output values from tensorflow and Cpp-implementation (of same NN-structure) can be compared via correlation, by using
-"/Correlation-Plotter-Python/**plotter.py** 
+* Where x is given an input vector (x = [x_1, x_2, ..., x_n])
+* Where y is output vector
+
+**5)* Output values from tensorflow and Cpp-implementation (of same NN-structure) are compared via correlation. This done as follows:
+* After calculating values for current layer, Cpp-program calls python script ("/Correlation-Plotter-Python/**plotter.py**"), and passes those values and Tensorflow's corresponding layer's output to that script.
+* Script creates comparing figure and saves that as image in same folder as script is located.
+* Lastly, script opens figure. Cpp-program continues to next layer 
+
+
+**6)** Program saves output-values (predictions for each mnist image, passed to NN as .csv) to "/Cpp-Implementation/Output-Data".
