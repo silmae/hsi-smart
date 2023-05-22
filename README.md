@@ -65,9 +65,9 @@ This is for comparisons in later phase.
      --------------------------------------------
 
 
-**3)** C++ program (/Cpp-Implementation/**Simple_NN.cpp**) reads contents (weights, biases and test data) from previously mentioned locations.
+**2)** C++ program (/Cpp-Implementation/**Simple_NN.cpp**) reads contents (weights, biases and test data) from previously mentioned locations.
 
-**4)** C++ program applies corresponding weights, biases and activation-function for input data on current layer and passes output of
+**3)** C++ program applies corresponding weights, biases and activation-function for input data on current layer and passes output of
 that layer to next. Following layer performs similar operations.
 
 For each neuron, is applied principle of: y = activation(w * x + b), where:
@@ -83,10 +83,10 @@ For output-layer instead, is applied: y = Softmax(x)
 * Where x is given an input vector (x = [x_1, x_2, ..., x_n])
 * Where y is output vector
 
-**5)* Output values from tensorflow and Cpp-implementation (of same NN-structure) are compared via correlation. This done as follows:
+**4)* Output values from tensorflow and Cpp-implementation (of same NN-structure) are compared via correlation. This done as follows:
 * After calculating values for current layer, Cpp-program calls python script ("/Correlation-Plotter-Python/**plotter.py**"), and passes those values and Tensorflow's corresponding layer's output to that script.
 * Script creates comparing figure and saves that as image in same folder as script is located.
 * Lastly, script opens figure. Cpp-program continues to next layer 
 
 
-**6)** Program saves output-values (predictions for each mnist image, passed to NN as .csv) to "/Cpp-Implementation/Output-Data".
+**5)** Program saves output-values (predictions for each mnist image, passed to NN as .csv) to "/Cpp-Implementation/Output-Data".
