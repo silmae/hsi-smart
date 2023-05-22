@@ -68,7 +68,7 @@ This is for comparisons in later phase.
 **2)** C++ program (/Cpp-Implementation/**Simple_NN.cpp**) reads contents (weights, biases and test data) from previously mentioned locations.
 
 **3)** C++ program applies corresponding weights, biases and activation-function for input data on current layer and passes output of
-that layer to next. Following layer performs similar operations.
+that layer to next.
 
 For each neuron, is applied principle of: y = activation(w * x + b), where:
 
