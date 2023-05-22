@@ -1,34 +1,48 @@
-import pandas as pd
-import os
+import sys
+import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+import subprocess
+import time
 
-# Set the paths to the two folders containing the .csv files
-folder1_path = "../Cpp-Implementation/Output-Data"
-folder2_path = "../Cpp-Implementation/Tensorflow-Output-Values"
+def compare_values(vector1, vector2, output_file):
+    # Filter out non-valid value pairs
+    filtered_pairs = [(x, y) for x, y in zip(vector1, vector2) if x != '0' and y != '0']
 
-# Create two empty dataframes to hold the data from each folder
-c_data = pd.DataFrame()
-tf_data = pd.DataFrame()
+    if len(filtered_pairs) == 0:
+        print("No valid value pairs found.")
+        return
 
-# Loop through the .csv files in folder 1 and concatenate the dataframes into c_data
-for filename in os.listdir(folder1_path):
-    if filename.endswith(".csv"):
-        file_path = os.path.join(folder1_path, filename)
-        c_data = pd.concat([c_data, pd.read_csv(file_path)], axis=1)
+    # Extract values from filtered pairs and convert to floats
+    values1 = [float(val) for x, y in filtered_pairs for val in x.split(',')]
+    values2 = [float(val) for x, y in filtered_pairs for val in y.split(',')]
 
-# Loop through the .csv files in folder 2 and concatenate the dataframes into tf_data
-for filename in os.listdir(folder2_path):
-    if filename.endswith(".csv"):
-        file_path = os.path.join(folder2_path, filename)
-        tf_data = pd.concat([tf_data, pd.read_csv(file_path)], axis=1)
+    # Calculate midpoints for each pair
+    midpoints = [(float(x) + float(y)) / 2 for x, y in filtered_pairs]
 
-# Calculate the correlation matrix between the two dataframes
-corr_matrix = c_data.corrwith(tf_data)
+    # Calculate the mean value
+    mean_value = np.mean(midpoints)
 
-print(c_data.shape)
-print(tf_data.shape)
-# Plot the correlation matrix as a heatmap
-sns.heatmap(corr_matrix, cmap="coolwarm", annot=True)
-plt.show()
+    # Create plot with two curves, midpoint line, and mean line
+    plt.plot(values1, label='Tensorflow', color='blue')
+    plt.plot(values2, label='Cpp-implementation', color='green')
+    plt.plot(midpoints, label='Midpoint', color='red', linestyle='--')
+    plt.axhline(mean_value, color='orange', linestyle='--', label='Mean')
+    plt.xlabel("Index")
+    plt.ylabel("Value")
+    plt.title("Comparison of Value-pairs")
+    plt.legend()
 
+    # Save the plot as an image
+    plt.savefig(output_file)
+    plt.close()  # Close the plot to release resources
+
+# Get command-line arguments
+vector1 = sys.argv[1].split(',')
+vector2 = sys.argv[2].split(',')
+output_file = sys.argv[3]
+
+# Call the compare_values function
+compare_values(vector1, vector2, output_file)
+
+# Open the saved image using the default image viewer
+subprocess.run(['xdg-open', output_file])
