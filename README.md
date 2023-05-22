@@ -15,7 +15,8 @@ Program also saves:
 output-values/predictions for each image (in this case 10 first) to:
 - "/Cpp-Implementation/Tensorflow-Output-Values".
 
-- 10 first images in Flatten state
+10 First images in Flatten state, to:
+- "/Cpp-Implementation/Test-Data"
 
 This is for comparisons in later phase.
 
@@ -63,9 +64,6 @@ This is for comparisons in later phase.
     |           Activation Function: Softmax     |
      --------------------------------------------
 
-**2)** Python program (/Trained-NN-Python/**MNIST_Image_Saver.py**) is used for saving given amount of images (10), from mnist-dataset to:
-
-- "/Cpp-Implementation/Test-Data"
 
 **3)** C++ program (/Cpp-Implementation/**Simple_NN.cpp**) reads contents (weights, biases and test data) from previously mentioned locations.
 
