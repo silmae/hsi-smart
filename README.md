@@ -2,6 +2,8 @@
 
 Purpose of this entity is to demonstrate, how trained Tensorflow-NN can be implemented in C++
 
+Note: Given directory structure (also those empty folders) is important for functionality.
+
 ## High-level operation principles:
 
 **1)** Python program (/Trained-NN-Python/**Simple_NN.py**) trains Tensorflow-NN with mnist-dataset, and saves weight and biases accordingly for each layer, to:
