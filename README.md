@@ -1,6 +1,6 @@
 # hsi-smart
 
-Purpose of this entity is to demonstrate, how trained Tensorflow-NN can be implented in C++
+Purpose of this entity is to demonstrate, how trained Tensorflow-NN can be implemented in C++
 
 ## High-level operation principles:
 
