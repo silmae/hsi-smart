@@ -83,7 +83,7 @@ Output-layer is exception. For it, is applied: y = Softmax(x)
 * Where x is given an input vector (x = [x_1, x_2, ..., x_n])
 * Where y is output vector
 
-**4)* Output values from tensorflow and Cpp-implementation (of same NN-structure) are compared via correlation. This done as follows:
+**4)** Output values from tensorflow and Cpp-implementation (of same NN-structure) are compared via correlation. This done as follows:
 * After calculating values for current layer, Cpp-program calls python script ("/Correlation-Plotter-Python/**plotter.py**"), and passes those values and Tensorflow's corresponding layer's output to that script.
 * Script creates comparing figure and saves that as image in same folder as script is located.
 * Lastly, script opens figure. Cpp-program continues to next layer 
