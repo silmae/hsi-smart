@@ -80,7 +80,7 @@ For each neuron, is applied principle of: y = activation(w * x + b), where:
 * w represents the weights
 * activation function applies a non-linear transformation to the output of the linear operation (w * x + b)
 
-For output-layer insteas, is applied: y = Softmax(x)
+For output-layer instead, is applied: y = Softmax(x)
 
 * Where x is given an input vector (x = [x_1, x_2, ..., x_n])
 * Where y is output vector
