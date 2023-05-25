@@ -8,19 +8,19 @@
    @ Jukka J
 */
 
-/* Not MISRA C:2012 compatible function to to visualize structure of .h5-file.
-   Useful in development stage, not needed by actual program.
+/* Not MISRA C:2012 compatible function to visualize the structure of .h5-file.
+   Useful in the development stage, not needed by the actual program.
 */
 void print_dataset_structure(hid_t loc_id, const char* name, int indent_level) {
     /* Creating an indentation string based on the indent_level.
-       Basically just empty space for printing purposes.
+       Basically just empty spaces for printing purposes.
     */
     char indent[4 * indent_level + 1];
     for (int i = 0; i < 4 * indent_level; i++) {
         indent[i] = ' ';
     }
     indent[4 * indent_level] = '\0';
-    
+
     /* Open the object in the HDF5 file */
     hid_t obj_id = H5Oopen(loc_id, name, H5P_DEFAULT);
     if (obj_id >= 0) {
@@ -47,12 +47,45 @@ void print_dataset_structure(hid_t loc_id, const char* name, int indent_level) {
                             }
                         }
                     }
-                     /* Close the group */
+                    /* Close the group */
                     H5Gclose(group_id);
                 }
-              /* Check if the object is a dataset */
-            } else if (obj_info.type == H5O_TYPE_DATASET) {
+            }
+            /* Check if the object is a dataset */
+            else if (obj_info.type == H5O_TYPE_DATASET) {
                 printf("%sDataset: %s\n", indent, name);
+                
+                /* Open the dataset */
+                hid_t dataset_id = H5Dopen(loc_id, name, H5P_DEFAULT);
+                if (dataset_id >= 0) {
+                    /* Get the dataspace */
+                    hid_t dataspace_id = H5Dget_space(dataset_id);
+                    if (dataspace_id >= 0) {
+                        /* Get the number of dimensions in the dataspace */
+                        int ndims = H5Sget_simple_extent_ndims(dataspace_id);
+                        if (ndims >= 0) {
+                            /* Get the dimensions */
+                            hsize_t dims[ndims];
+                            H5Sget_simple_extent_dims(dataspace_id, dims, NULL);
+                            
+                            /* Print the dimensions of the dataset */
+                            printf("%sDimensions: [", indent);
+                            for (int i = 0; i < ndims; i++) {
+                                printf("%lld", (long long)dims[i]);
+                                if (i < ndims - 1) {
+                                    printf(", ");
+                                }
+                            }
+                            printf("]\n");
+                        }
+                        
+                        /* Close the dataspace */
+                        H5Sclose(dataspace_id);
+                    }
+                    
+                    /* Close the dataset */
+                    H5Dclose(dataset_id);
+                }
             }
         }
         /* Close the object */
@@ -75,4 +108,3 @@ int main() {
 
     return 0;
 }
-
