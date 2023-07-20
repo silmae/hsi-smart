@@ -94,7 +94,7 @@ void print_dataset_structure(hid_t loc_id, const char* name, int indent_level) {
 }
 
 int main() {
-    const char* file_path = "./CNN_450-2450-5-550_1110-11-110-111-000_20220330113805.h5";
+    const char* file_path = "./CNN_450-2450-5-550_1110-11-110-111-000_20230605090251_new.h5";
 
     hid_t file_id = H5Fopen(file_path, H5F_ACC_RDONLY, H5P_DEFAULT);
     if (file_id < 0) {
