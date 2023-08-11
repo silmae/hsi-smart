@@ -107,7 +107,7 @@ This directory contains only code necessary, and is stripped from development to
 +------------------------+  
 | Output: (None, 10)     |  
 +------------------------+  
-```plaintext
+```
          
 ## Task distribution of the C-implementation:
 
