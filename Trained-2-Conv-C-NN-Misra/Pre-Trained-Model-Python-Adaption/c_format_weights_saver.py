@@ -5,8 +5,10 @@ from keras.models import Model, load_model
 import tensorflow.keras.backend as K
 
 # Created:       01.08.2023
-#   Last modified: 01.08.2023
-#   @ Jukka J
+# Last modified: 01.08.2023
+# Pre-trained model by: @ David Korda D.Korda@seznam.cz
+# Adaption: @ Jukka J jajoutzs@jyu.fi
+
 
 # Loading the labels
 labels = np.load("../../archive/mineral-spectra_denoised_norm/labels.npy")
