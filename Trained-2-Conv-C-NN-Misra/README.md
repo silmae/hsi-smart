@@ -1,50 +1,119 @@
 ## What is this?:
-This is C-implementation for trained neural network (Structure down below).
-Program (Version in Optimised directory) is designed to be MISRA C:2012 compliance
-and dynamic in contrast to size of input and hidden layers -> input sizes are
-computed from the shape of input data. Optimised version has hardcoded weights, biases etc.
-to minimize resources needed. Also, that directory contains only code necessary. 
+This is C-implementation for trained 2-convolution neural network (Structure down below), that
+produces predictions of mineral type of the input image. Program is designed to be MISRA C:2012
+compliance and dynamic in contrast to size of input and hidden layers -> input sizes are
+computed from the shape of input data. Pre-trained values (weights, biases etc.) are located in
+one header file, to avoid file reading operations and for simplification reasons.
 
-Version in base implementation, is mainly for development purposes, and to allow
-changes in .h5 files (from which weights etc. are loaded) to be more easily implemented
-in code. Program assumes similar hierarch and datasets from .h5, but is not restricted by
-variation in size of those datasets.
+High level operation principle of the program is very straightforward. Each (necessary) layer of trained
+model is represented as function, and one such layer's return value is the input of the layer that follows.
 
-## Structure of NN:
+Input data of the network (flattened image) is 1D array of floats.
 
-         +------------------------+
-         |      Input (401)       |
-         |      Relu              |
-         +------------------------+
+This directory contains only code necessary, and is stripped from development tools and programs.
+
+
+## Structure of NN (As trained and implementated):
+
++------------------------+
+| Input (401)            | (Not implementated in C-version as definion of layer)
++------------------------+
+| Output: (None, 401, 1) |
++------------------------+
                   |
-         +------------------------+
-         | Conv1 (24 filters, 5x5)|
-         |      Relu              |
-         +------------------------+
++------------------------+
+| Batch_Normalization    |
++------------------------+
+| Output: (None, 401, 1) |
+| Params: 4              |
++------------------------+
                   |
-         +------------------------+
-         | Conv2 (8 kernels, 5x5) |
-         |      Sigmoid (10)      |
-         +------------------------+
++------------------------+
+| Dropout (Rate: 0.0)    | (Not implementated in C-version)
++------------------------+
+| Output: (None, 401, 1) |
+| Params: 0              |
++------------------------+
                   |
-         +------------------------+
-         |      Output (10)       |
-         +------------------------+
++------------------------+
+| Conv1D (24 kernel)     | => Filter size : 5
++------------------------+
+| Output: (None, 401, 24)|
+| Params: 144            |
++------------------------+
+                  |
++------------------------+
+| Activation             | => Relu
++------------------------+
+| Output: (None, 401, 24)|
++------------------------+
+                  |
++------------------------+
+| Batch_Normalization_1  |
++------------------------+
+| Output: (None, 401, 24)|
+| Params: 96             |
++------------------------+
+                  |
++------------------------+
+| Dropout_1 (Rate: 0.3)  | (Not implementated in C-version)
++------------------------+
+| Output: (None, 401, 24)|
+| Params: 0              |
++------------------------+
+                  |
++------------------------+
+| Conv1D_1 (8 kernels)   | => Filter size : 5
++------------------------+
+| Output: (None, 401, 8) |
+| Params: 968            |
++------------------------+
+                  |
++------------------------+
+| Activation_1           | => Relu
++------------------------+
+| Output: (None, 401, 8) |
++------------------------+
+                  |
++------------------------+
+| Batch_Normalization_2  |
++------------------------+
+| Output: (None, 401, 8) |
+| Params: 32             |
++------------------------+
+                  |
++------------------------+
+| Flatten                |
++------------------------+
+| Output: (None, 3208)   |
++------------------------+
+                  |
++------------------------+
+| Dropout_2 (Rate: 0.4)  | (Not implementated in C-version)
++------------------------+
+| Output: (None, 3208)   |
+| Params: 0              |
++------------------------+
+                  |
++------------------------+
+| Dense (10)             |
++------------------------+
+| Output: (None, 10)     |
+| Params: 32090          |
++------------------------+
+                  |
++------------------------+
+| Activation_2           | => Normalised sigmoid
++------------------------+
+| Output: (None, 10)     |
++------------------------+
+
          
-## Task distribution in both versions:
+## Task distribution of the C-implementation:
 
-**High level logic and operations**:
+tools.h            : function prototype, also contains defined numbers, like kernel counts etc.
+tools.c            : contains functionality and layers
+trained_model.h    : contains pre trained data
+trained_nn_misra.c : passes input to layers
 
-- Main-program: **trained_nn_misra.c**
 
-**Activation functions, loading of the necessary data, unit conversions,
-re-structuring, saving etc. :**
-
-- Function prototype: **calc_tools.h**
-- Source file: **calc_tools.c**
-
-**Possible visualisations via separate python program:**
-- **visualiser.py**
-
-## Process flow:
-**Todo**
