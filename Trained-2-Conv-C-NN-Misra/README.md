@@ -14,7 +14,7 @@ This directory contains only code necessary, and is stripped from development to
 
 
 ## Structure of NN (As trained and implementated):
-
+```plaintext
 +------------------------+  
 | Input (401)            | (Not implementated in C-version as definion of layer)  
 +------------------------+  
@@ -107,7 +107,7 @@ This directory contains only code necessary, and is stripped from development to
 +------------------------+  
 | Output: (None, 10)     |  
 +------------------------+  
-
+```plaintext
          
 ## Task distribution of the C-implementation:
 
