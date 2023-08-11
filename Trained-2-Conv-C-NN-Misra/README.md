@@ -112,12 +112,12 @@ Program contains only code necessary, and is stripped from use of development to
          
 ## Task distribution of the C-implementation:
 
-Necessary:
+**Necessary**:
 tools.h            : Function prototype, also contains defined numbers, like kernel counts etc.  
 tools.c            : Contains functionality and layers  
 trained_model.h    : Contains pre trained data  
 trained_nn_misra.c : Passes input to layers  
 
-For testing purposes:  
+**For testing purposes**:  
 dat_parser.h       : Function prototype, also contains defined numbers  
 dat_parser.c       : Tool for reading and stroing test data to be passed to NN  
