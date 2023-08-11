@@ -3,7 +3,8 @@ This is C-implementation for trained 2-convolution neural network (Structure dow
 produces predictions of mineral type of the input image. Program is designed to be MISRA C:2012
 compliance and dynamic in contrast to size of input and hidden layers -> input sizes are
 computed from the shape of input data. Pre-trained values (weights, biases etc.) are located in
-one header file, to avoid file reading operations and for simplification reasons.
+one header file, to avoid file reading operations and for simplification reasons. Program is designed
+to be energy efficient.
 
 High level operation principle of the program is very straightforward. Each (necessary) layer of trained
 model is represented as function, and one such layer's return value is the input of the layer that follows.
@@ -13,7 +14,7 @@ Input data of the network (flattened image) is 1D array of floats.
 This directory contains only code necessary, and is stripped from development tools and programs.
 
 
-## Structure of NN (As trained and implementated):
+## Structure of NN (As trained and implemented):
 ```plaintext
 +------------------------+  
 | Input (401)            | (Not implementated in C-version as definion of layer)  
