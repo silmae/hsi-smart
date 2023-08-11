@@ -6,7 +6,9 @@ import tensorflow.keras.backend as K
 
 # Created:       10.07.2023
 # Last modified: 11.08.2023
-# @ Jukka J
+# Pre-trained model by: @ David Korda D.Korda@seznam.cz
+# Adaption: @ Jukka J jajoutzs@jyu.fi
+
 
 np.set_printoptions(suppress = True)
 
