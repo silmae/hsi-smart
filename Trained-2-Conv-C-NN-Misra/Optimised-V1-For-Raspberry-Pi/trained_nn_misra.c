@@ -17,6 +17,7 @@ int main() {
 
         /* Single image as input, and corresponding size */
         double * input = four_test_images[0];
+        int i_s = IMG_VAL_COUNT;
 
         /*========== Function calling sequence: ==========================*/
         
