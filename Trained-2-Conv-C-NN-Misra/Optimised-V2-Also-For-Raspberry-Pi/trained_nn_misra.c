@@ -56,7 +56,13 @@ int main() {
         free(arr3);
         
         /* TODO: do something with produced predictions (for single image) */
-
+        
+        /*
+        for (int i = 0; i < DLBC_AND_DLWD2; i++) {
+            printf("%.8lf\n", arr4[i]);
+        }
+        */
+        
         /* Freeing allocated memory */
         free(arr4);
         
