@@ -141,6 +141,6 @@ dat_parser.c       : Tool for reading and storing test data to be passed to NN
 ## Compiling:
 Uses mostly built in libraries, with -lm, linking against math library  
 
-$ gcc trained_nn_misra.c tools.c -lm -o program  
-$ ./program  
+**$** gcc trained_nn_misra.c tools.c -lm -o program  
+**$** ./program  
 
