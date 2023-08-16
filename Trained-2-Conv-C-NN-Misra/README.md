@@ -125,7 +125,7 @@ dat_parser.h       : Function prototype, also contains defined numbers
 dat_parser.c       : Tool for reading and storing test data to be passed to NN  
 
 **(In V2)**:  
-inputs_for_testing.h : Contains four images, as C-arrays for testing demonstrating purposes  
+inputs_for_testing.h : Contains four images, as C-arrays for testing and demonstration purposes  
 ## Accuracy expectations, compared against original model (single image):
 
 | C-predictions | Python-predictions |
