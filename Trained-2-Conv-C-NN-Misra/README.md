@@ -118,6 +118,22 @@ tools.c            : Contains functionality and layers
 trained_model.h    : Contains pre trained data  
 trained_nn_misra.c : Passes input to layers  
 
-**For testing purposes**:  
+**For testing purposes only**:  
 dat_parser.h       : Function prototype, also contains defined numbers  
 dat_parser.c       : Tool for reading and storing test data to be passed to NN  
+
+
+## Accuracy expectations, compared against original model (single image):
+
+C-predictions:  Python-predictions:
+
+0.47832212      0.47832254
+0.27301882      0.2730157
+0.24865907      0.24866167
+0.22382170      0.22382303
+0.77617830      0.77617687
+0.22412304      0.22411902
+0.77587696      0.7758809
+0.18311136      0.18310794
+0.52827644      0.5282796
+0.28861220      0.28861243
