@@ -112,7 +112,7 @@ Program (V2) contains only code necessary, and is stripped from use of developme
          
 ## Task distribution of the C-implementation:
 
-**Necessary**:
+**Necessary**:  
 tools.h            : Function prototype, also contains defined numbers, like kernel counts etc.  
 tools.c            : Contains functionality and layers  
 trained_model.h    : Contains pre trained data  
