@@ -11,7 +11,7 @@ model is represented as function, and one such layer's return value is the input
 
 Input data of the network (flattened image) is 1D array of floats.
 
-Program contains only code necessary, and is stripped from use of development tools etc..
+Program (V2) contains only code necessary, and is stripped from use of development tools etc.
 
 
 ## Structure of NN (As trained and implemented):
