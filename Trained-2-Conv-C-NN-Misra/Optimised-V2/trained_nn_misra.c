@@ -14,10 +14,11 @@ int main() {
 
     for (int i = 0; i < 1; i++) {
 
-        /* Single image as input, array is implicitly converted to a pointer
+        /* Use single image as input, array can implicitly converted to a pointer
            => no need for an explicit cast
         */
-        double * input = four_test_images[0];
+        /* E.g: */
+        double * input =  <your array of doubles here>;
 
         /* Determine size of the input dynamically like follows, or determine it in tools.h
            as IMG_VAL_COUNT and use it:
@@ -25,9 +26,11 @@ int main() {
            int i_s = IMG_VAL_COUNT;
         */
         
-        /* TODO: adjust to match actual input */
+        /* TODO: adjust to match actual input data structure
+           Here, array of double arrays is used
+        */
         /* Calculating dynamically size of the input */
-        int i_s = sizeof(four_test_images[0]) / sizeof(four_test_images[0][0]);
+        int i_s = sizeof(<your array here>[0]) / sizeof(<your array here>[0][0]);
 
         /*========== Function calling sequence: ==========================*/
         
