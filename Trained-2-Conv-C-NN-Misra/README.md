@@ -118,7 +118,7 @@ tools.c            : Contains functionality and layers
 trained_model.h    : Contains pre trained data  
 trained_nn_misra.c : Passes input to layers  
 
-**For testing purposes only**:  
+**For testing purposes only (not in V2)**:  
 dat_parser.h       : Function prototype, also contains defined numbers  
 dat_parser.c       : Tool for reading and storing test data to be passed to NN  
 
