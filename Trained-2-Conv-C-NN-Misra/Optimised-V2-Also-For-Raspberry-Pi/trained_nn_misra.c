@@ -1,5 +1,5 @@
 #include "tools.h"
-#include "inputs_for_testing.h"
+#include "inputs_for_testing.h" /* TODO: remove import and header, if implented with hardware */
 #include <stdlib.h>
 
 /* Created:       25.05.2023
@@ -15,15 +15,20 @@ int main() {
 
     for (int i = 0; i < 1; i++) {
 
-        /* Single image as input, and corresponding size */
+        /* Single image as input, array is implicitly converted to a pointer
+           => no need for an explicit cast
+        */
         double * input = four_test_images[0];
 
-        /* Determine size of the input dynamically here, or determine it in tools.h
-           as IMG_VAL_COUNT
-           e.g: 
+        /* Determine size of the input dynamically like follows, or determine it in tools.h
+           as IMG_VAL_COUNT and use it:
+           e.g:
+           int i_s = IMG_VAL_COUNT;
         */
-
-        int i_s = IMG_VAL_COUNT;
+        
+        /* TODO: adjust to match actual input */
+        /* Calculating dynamically size of the input */
+        int i_s = sizeof(four_test_images[0]) / sizeof(four_test_images[0][0]);
 
         /*========== Function calling sequence: ==========================*/
         

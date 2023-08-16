@@ -104,7 +104,7 @@ Program contains only code necessary, and is stripped from use of development to
 +------------------------+  
                   |  
 +------------------------+  
-| Activation_2           | => Normalised sigmoid  
+| Activation_2           | => Normalised sigmoid (3-2-2-3)
 +------------------------+  
 | Output: (None, 10)     |  
 +------------------------+  
