@@ -30,6 +30,7 @@ Single small set of images passed once.
 |-------------Measure--------------|
 |     --S->     |      --R->       |
 
+
 Scen2:
 
 Single large set of images passed once, without sleep function.
@@ -81,6 +82,7 @@ Single small set of images passed in intervals. In between passes, program is in
 0s          |          |          |          |        +10s
 |------------------------ Measure------------------------|
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
+
 
 Scen5:
 
