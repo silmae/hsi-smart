@@ -6,6 +6,7 @@
    @ Jukka J jajoutzs@jyu.fi
 */
 
+/* Contains sequence of NN-function calls in sizeable loop */
 void sequence(double * input, int count) {
     for (int i = 0; i < count; i++) {
 
@@ -31,21 +32,27 @@ void sequence(double * input, int count) {
     }
 }
 
-scen1(double * input, int i_s) {
+/* Single small set of images passed once */
+void scen1(double * input, int i_s) {
     sleep(2.5);
     sequence(input, 10);
 }
 
-scen2(double * input, int i_s) {
+/* Single large set of images passed once, without sleep function */
+void scen2(double * input, int i_s) {
     sequence(input, 50);
 }
 
-scen3(double * input, int i_s) {
+/* Single large set of images passed once */
+void scen3(double * input, int i_s) {
     sleep(2.5);
     sequence(input, 100);
 }
 
-scen4(double * input, int i_s) {
+/* Single small set of images passed in intervals. In between passes,
+   program is in "idle"-state
+*/
+void scen4(double * input, int i_s) {
     sleep(2);
     sequence(input, 10);
     sleep(2);
@@ -56,7 +63,10 @@ scen4(double * input, int i_s) {
     sequence(input, 10);
 }
 
-scen5(double * input, int i_s) {
+/* Single set of images, with growing image-counts, passed in intervals.
+   In between passes, program is in "idle"-state
+*/
+void scen5(double * input, int i_s) {
     sleep(2);
     sequence(input, 10);
     sleep(2);
