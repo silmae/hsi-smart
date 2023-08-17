@@ -68,18 +68,11 @@ Single small set of images passed in intervals. In between passes, program is in
 
 Scen4:
 
-Single set of images, with growing size, passed in intervals. In between passes, program is in "idle"-state.
+Single set of images, with growing image-counts, passed in intervals. In between passes, program is in "idle"-state.
 
-                              5 images
-                             /
-                            or
-                 ------------or-- 10 images
-                /           or
-           Pass data         \
-                \              20 images
-                 \
-                  \
-              -------------------------------
+              10       50        100        200
+              |        |          |          |
+              ----------Pass data-------------
              /         |          |          \
             2s        +4s        +6s        +8s
 0s          |          |          |          |        +10s
