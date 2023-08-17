@@ -1,16 +1,32 @@
 #include "tools.h"
+#include "tests.h"
 #include "inputs_for_testing.h" /* TODO: remove import and header, if implented with hardware */
 #include <stdlib.h>
 
 /* Created:       25.05.2023
-   Last modified: 15.08.2023
+   Last modified: 17.08.2023
    @ Jukka J jajoutzs@jyu.fi
 */
 
 /* Example of usage, test data is read, and passed through network: */
 
 int main() {
-    
+
+     /* Scen1 */
+     Scen1(four_test_images);
+
+     /* Scen2 */
+     /* Scen2(four_test_images); */
+
+     /* Scen3 */
+     /* Scen3(four_test_images); */
+
+     /* Scen4 */
+     /* Scen4(four_test_images); */
+
+     /* Scen5 */
+     /* Scen5(four_test_images); */
+        
     /* Looping through (1st image only in this case) test data, and passing data through NN */
 
     for (int i = 0; i < 1; i++) {
