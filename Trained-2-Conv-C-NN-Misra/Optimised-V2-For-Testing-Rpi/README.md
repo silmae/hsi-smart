@@ -32,7 +32,7 @@ Single small set of images passed once.
 
 Scen2:
 
-Single large set of images passed once, without sleep function
+Single large set of images passed once, without sleep function.
 
       50 images
      /
@@ -53,7 +53,7 @@ Single large set of images passed once.
                               /
                              or
                     -----------or-- 100 images
-                   /         oren in idle state for 5min, to reach maximum, non-load cpu-temperature. (Some reference number: 49.4 C)
+                   /
 Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption.
 
 Scen4:
