@@ -54,7 +54,13 @@ Single large set of images passed once.
                              or
                     -----------or-- 100 images
                    /
-Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption.
+                  /
+                 /
+               2.5s
+0s              |                 5s (Actual exec.-time "< 3s", but measuring should last longer)
+|-------------Measure--------------|
+|     --S->     |      --R->       |
+
 
 Scen4:
 
