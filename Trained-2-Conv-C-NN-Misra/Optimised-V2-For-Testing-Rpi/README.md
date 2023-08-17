@@ -12,6 +12,7 @@
 **R**=Run  
 
 ```plaintext
+
 Scen1:
 
 Single small set of images passed once.
@@ -31,22 +32,31 @@ Single small set of images passed once.
 
 Scen2:
 
+Single large set of images passed once, without sleep function
+
+      50 images
+     /
+Pass data
+   /
+  /
+ /        Ns
+0s        |                      3s (Actual exec.-time "< 1s", but measuring should last longer)
+|-------------Measure--------------|
+|  --R->  |                        |
+
+
+Scen3:
+
 Single large set of images passed once.
 
                                50 images
                               /
                              or
                     -----------or-- 100 images
-                   /         or
-              Pass data       \
-                 /             200 images
-                /
-               2.5s
-0s              |                 5s (Actual exec.-time probably "< 3s", but measuring should last longer)
-|-------------Measure--------------|
-|     --S->     |      --R->       |
+                   /         oren in idle state for 5min, to reach maximum, non-load cpu-temperature. (Some reference number: 49.4 C)
+Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption.
 
-Scen3:
+Scen4:
 
 Single small set of images passed in intervals. In between passes, program is in "idle"-state.
 
@@ -66,7 +76,7 @@ Single small set of images passed in intervals. In between passes, program is in
 |------------------------ Measure------------------------|
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
 
-Scen4:
+Scen5:
 
 Single set of images, with growing image-counts, passed in intervals. In between passes, program is in "idle"-state.
 
