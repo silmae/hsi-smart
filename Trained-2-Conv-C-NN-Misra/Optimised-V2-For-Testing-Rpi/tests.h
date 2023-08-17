@@ -7,7 +7,7 @@
 */
 
 /* Contains sequence of NN-function calls in sizeable loop */
-void sequence(double * input, int count);
+void sequence(double * input, int i_s, int count);
 
 /* Single small set of images passed once */
 void scen1(double * input, int i_s);

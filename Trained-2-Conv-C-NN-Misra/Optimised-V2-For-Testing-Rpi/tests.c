@@ -8,7 +8,7 @@
 */
 
 /* Contains sequence of NN-function calls in sizeable loop */
-void sequence(double * input, int count) {
+void sequence(double * input, int i_s, int count) {
     for (int i = 0; i < count; i++) {
 
         /*========== Function calling sequence: ==========================*/
@@ -36,18 +36,18 @@ void sequence(double * input, int count) {
 /* Single small set of images passed once */
 void scen1(double * input, int i_s) {
     sleep(2.5);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
 }
 
 /* Single large set of images passed once, without sleep function */
 void scen2(double * input, int i_s) {
-    sequence(input, 50);
+    sequence(input, i_s, 50);
 }
 
 /* Single large set of images passed once */
 void scen3(double * input, int i_s) {
     sleep(2.5);
-    sequence(input, 100);
+    sequence(input, i_s, 100);
 }
 
 /* Single small set of images passed in intervals. In between passes,
@@ -55,13 +55,13 @@ void scen3(double * input, int i_s) {
 */
 void scen4(double * input, int i_s) {
     sleep(2);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
     sleep(2);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
     sleep(2);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
     sleep(2);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
 }
 
 /* Single set of images, with growing image-counts, passed in intervals.
@@ -69,11 +69,11 @@ void scen4(double * input, int i_s) {
 */
 void scen5(double * input, int i_s) {
     sleep(2);
-    sequence(input, 10);
+    sequence(input, i_s, 10);
     sleep(2);
-    sequence(input, 50);
+    sequence(input, i_s, 50);
     sleep(2);
-    sequence(input, 100);
+    sequence(input, i_s, 100);
     sleep(2);
-    sequence(input, 200);
+    sequence(input, i_s, 200);
 }
