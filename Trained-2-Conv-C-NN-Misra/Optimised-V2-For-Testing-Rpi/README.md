@@ -2,8 +2,8 @@
 
 **Things consired:**  
 
-* Before each test-scenario, Rpi has been in idle state for 5min, to 
-* reach maximum, non-load cpu-temperature.
+* Before each test-scenario, Rpi has been in idle state for 5min, to reach maximum, non-load cpu-temperature.
+(Some reference number: 49.4 C)  
 * Time-librarys sleep-function has been utlized, to contrast spikes in energy-consumption.  
 
 ## Visualization of test scenarios:
