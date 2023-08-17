@@ -147,3 +147,6 @@ Uses mostly built in libraries, with -lm, linking against math library
 **$** gcc trained_nn_misra.c tools.c -lm -o program  
 **$** ./program  
 
+# Testing related:
+
+[Testing: Energy usage in Rpi](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Optimised-V2-For-Testing-Rpi)
