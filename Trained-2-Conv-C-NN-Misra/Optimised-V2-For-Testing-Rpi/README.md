@@ -98,6 +98,35 @@ Single set of images, with growing image-counts, passed in intervals. In between
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
 
 
+Scen6:
+
+Single large small set of images passed once, without sleep function.
+
+      10 images
+     /
+Pass data
+   /
+  /
+ /        Ns
+0s        |                      +3s
+|-------------Measure--------------|
+|  --R->  |                        |
+
+
+Scen7:
+
+Single image passed once, without sleep function.
+
+      1 image
+     /
+Pass data
+   /
+  /
+ /        Ns
+0s        |                      +3s
+|-------------Measure--------------|
+|  --R->  |                        |
+
 ```
 
 ## Results of testing:

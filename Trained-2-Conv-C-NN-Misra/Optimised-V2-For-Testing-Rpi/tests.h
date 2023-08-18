@@ -31,4 +31,7 @@ void scen5(double * input, int i_s);
 /* Single small set of images passed once, without sleep function */
 void scen6(double * input, int i_s);
 
+/* Single image passed once, without sleep function */
+void scen7(double * input, int i_s);
+
 #endif

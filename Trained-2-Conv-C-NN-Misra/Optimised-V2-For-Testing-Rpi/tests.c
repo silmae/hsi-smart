@@ -81,3 +81,7 @@ void scen5(double * input, int i_s) {
 void scen6(double * input, int i_s) {
     sequence(input, i_s, 10);
 }
+
+void scen7(double * input, int i_s) {
+    sequence(input, i_s, 1);
+}
