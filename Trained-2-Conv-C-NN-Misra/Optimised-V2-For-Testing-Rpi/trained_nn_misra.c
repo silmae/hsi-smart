@@ -32,7 +32,9 @@ int main() {
 
      /* Scen6 */
      /* scen6(input, i_s); */
-    
+
+     /* Scen7 */
+     /* scen7(input, i_s); */ 
     return 0;
     
 }
