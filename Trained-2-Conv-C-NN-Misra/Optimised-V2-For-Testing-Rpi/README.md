@@ -32,6 +32,9 @@ Single small set of images passed once, with sleep function.
 
 ```
 
+**Figure:**:
+
+
 ```plaintext
 
 Scen2:
@@ -49,6 +52,9 @@ Pass data
 |  --R->  |                        |
 
 ```
+
+**Figure:**:
+
 
 ```plaintext
 
@@ -69,6 +75,9 @@ Single large set of images passed once.
 |     --S->     |      --R->       |
 
 ```
+
+**Figure:**:
+
 
 ```plaintext
 
@@ -94,6 +103,9 @@ Single small set of images passed in intervals. In between passes, program is in
 
 ```
 
+**Figure:**:
+
+
 ```plaintext
 
 Scen5:
@@ -110,6 +122,9 @@ Single set of images, with growing image-counts, passed in intervals. In between
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
 
 ```
+
+**Figure:**:
+
 
 ```plaintext
 
@@ -128,6 +143,9 @@ Single small set of images passed once, without sleep function.
 
 ```
 
+**Figure:**:
+
+
 ```plaintext
 
 Scen7:
@@ -142,6 +160,9 @@ Single image passed once, without sleep function.
 0s        |                      +3s
 |-------------Measure--------------|
 |         |         --R->          |
+
+
+**Figure:**:
 
 
 ```
