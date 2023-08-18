@@ -6,7 +6,7 @@
 (Some reference number: 49.4 C)  
 * Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption.  
 
-## Visualization of test scenarios:
+## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
 
 **S**=Sleep    
 **R**=Run  
@@ -15,7 +15,7 @@
 
 Scen1:
 
-Single small set of images passed once.
+Single small set of images passed once, with sleep function.
 
                                5 images
                               /
@@ -30,6 +30,9 @@ Single small set of images passed once.
 |-------------Measure--------------|
 |     --S->     |      --R->       |
 
+```
+
+```plaintext
 
 Scen2:
 
@@ -45,6 +48,9 @@ Pass data
 |-------------Measure--------------|
 |  --R->  |                        |
 
+```
+
+```plaintext
 
 Scen3:
 
@@ -62,6 +68,9 @@ Single large set of images passed once.
 |-------------Measure--------------|
 |     --S->     |      --R->       |
 
+```
+
+```plaintext
 
 Scen4:
 
@@ -83,6 +92,9 @@ Single small set of images passed in intervals. In between passes, program is in
 |------------------------ Measure------------------------|
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
 
+```
+
+```plaintext
 
 Scen5:
 
@@ -97,6 +109,9 @@ Single set of images, with growing image-counts, passed in intervals. In between
 |------------------------ Measure------------------------|
 |   --S->   |  --R+S-> |  --R+S-> |  --R+S-> |  --R+S->  |
 
+```
+
+```plaintext
 
 Scen6:
 
@@ -111,6 +126,9 @@ Single small set of images passed once, without sleep function.
 |-------------Measure--------------|
 |         |         --R->          |
 
+```
+
+```plaintext
 
 Scen7:
 
