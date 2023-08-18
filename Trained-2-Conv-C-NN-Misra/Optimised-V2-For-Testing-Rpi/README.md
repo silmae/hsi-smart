@@ -125,8 +125,6 @@ Single image passed once, without sleep function.
 |-------------Measure--------------|
 |         |         --R->          |
 
-Also measured with longer longer idle periods. Separate .csv named accordingly.
-4s idle + R + 4d idle follow up.
 
 ```
 
