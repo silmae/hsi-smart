@@ -32,7 +32,7 @@ Single small set of images passed once, with sleep function.
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -53,7 +53,7 @@ Pass data
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -76,7 +76,7 @@ Single large set of images passed once.
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -103,7 +103,7 @@ Single small set of images passed in intervals. In between passes, program is in
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -123,7 +123,7 @@ Single set of images, with growing image-counts, passed in intervals. In between
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -143,7 +143,7 @@ Single small set of images passed once, without sleep function.
 
 ```
 
-**Figure:**:
+**Figure:**
 
 
 ```plaintext
@@ -162,10 +162,10 @@ Single image passed once, without sleep function.
 |         |         --R->          |
 
 
-**Figure:**:
-
-
 ```
+
+**Figure:**
+
 
 ## Results of testing:
 
