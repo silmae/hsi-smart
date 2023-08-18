@@ -55,7 +55,7 @@ Single large set of images passed once.
                              or
                     -----------or-- 100 images
                    /
-                  /
+              Pass data
                  /
                2.5s
 0s              |                 5s (Actual exec.-time "< 3s", but measuring should last longer)
