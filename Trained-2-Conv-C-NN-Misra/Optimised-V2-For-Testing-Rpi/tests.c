@@ -77,3 +77,7 @@ void scen5(double * input, int i_s) {
     sleep(2);
     sequence(input, i_s, 200);
 }
+
+void scen6(double * input, int i_s) {
+    sequence(input, i_s, 10);
+}

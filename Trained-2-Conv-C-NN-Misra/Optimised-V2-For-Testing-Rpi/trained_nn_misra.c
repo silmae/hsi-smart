@@ -29,6 +29,9 @@ int main() {
 
      /* Scen5 */
      /* scen5(input, i_s); */
+
+     /* Scen6 */
+     /* scen6(input, i_s); */
     
     return 0;
     
