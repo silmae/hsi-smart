@@ -26,7 +26,7 @@ Single small set of images passed once.
                  /             20 images
                 /
                2.5s
-0s              |                 5s (Actual exec.-time "< 3s", but measuring should last longer)
+0s              |                +3s
 |-------------Measure--------------|
 |     --S->     |      --R->       |
 
@@ -41,7 +41,7 @@ Pass data
    /
   /
  /        Ns
-0s        |                      3s (Actual exec.-time "< 1s", but measuring should last longer)
+0s        |                      +3s
 |-------------Measure--------------|
 |  --R->  |                        |
 
