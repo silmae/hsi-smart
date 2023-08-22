@@ -25,9 +25,9 @@ However, it is worth mentioning, that measured idle power of our Rpi configurati
 Similarly, current draw never undercut 400mA and voltages lowerbound was lower than one in benchmark result, being as low as: ≈ 4.6V.
 To be more precise, down below are averages, calculated from Rpi's 10s idle data, measured with Joulescope DC Energy Analyser (Model version: JS110)
 
-**Average Current**: 0.43365014285714276 A  
-**Average Voltage**: 4.7200709523809525 V  
-**Average Power**: 2.0457033333333334 W  
+**Average Current**: 0.43365 A  
+**Average Voltage**: 4.72000 V  
+**Average Power**: 2.04570 W  
 
 
 ## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
