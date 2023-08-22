@@ -1,13 +1,13 @@
 ## Concept for testing:
 
-**Things consired:**  
+**Things consired**  
 
 * Before each test-scenario, Rpi has been in idle state for 5min, to reach maximum, non-load cpu-temperature.
 
 * Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption. Some test ran also without
 to see, as sleep function is non-essential.
 
-***About value ranges***
+**About value ranges**
 
 Plot unit ranges are based on following knowledge:
 
@@ -25,9 +25,9 @@ However, it is worth mentioning, that measured idle power consumption of our Rpi
 Similarly, current draw never undercut 400mA and voltages lowerbound was lower than one in benchmark result, being as low as: ≈ 4.6V.
 To be more precise, down below are averages, calculated from Rpi's 10s idle data, measured with Joulescope DC Energy Analyser (Model version: JS110)
 
-Average Current: 0.43365014285714276
-Average Voltage: 4.7200709523809525
-Average Power: 2.0457033333333334
+**Average Current**: 0.43365014285714276 A  
+**Average Voltage**: 4.7200709523809525 V  
+**Average Power**: 2.0457033333333334 W  
 
 
 ## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
