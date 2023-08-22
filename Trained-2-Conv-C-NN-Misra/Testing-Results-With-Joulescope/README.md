@@ -13,7 +13,7 @@ Plot unit ranges are based on following knowledge:
 
 Raspberry pi 3 B+ models benchmark values for current draw, according to pidreamble.com, is around: 350mA (idle-state) up to 980mA (heavy load)
 (https://www.pidramble.com/wiki/benchmarks/power-consumption)'. And the known working voltage range of mentioned Rpi model is: 4.75 - 5.25V.
-Therefore, we can obtain reasonable power consumption range:
+Therefore, we can obtain reasonable power range:
 
 For power:
 
@@ -21,7 +21,7 @@ For power:
  
 - Max: (4,75 + 5.0V / 2) * 0.98A ≈ 4.78W
 
-However, it is worth mentioning, that measured idle power consumption of our Rpi configuration, never dropped below 2 Watts.
+However, it is worth mentioning, that measured idle power of our Rpi configuration, never dropped below 2 Watts.
 Similarly, current draw never undercut 400mA and voltages lowerbound was lower than one in benchmark result, being as low as: ≈ 4.6V.
 To be more precise, down below are averages, calculated from Rpi's 10s idle data, measured with Joulescope DC Energy Analyser (Model version: JS110)
 
