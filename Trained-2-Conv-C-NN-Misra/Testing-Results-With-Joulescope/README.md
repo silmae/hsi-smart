@@ -7,7 +7,7 @@
 * Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption. Some test ran also without
 to see, as sleep function is non-essential.
 
-**About value ranges**
+**About figures and their value ranges**
 
 Plot unit ranges are based on following knowledge:
 
