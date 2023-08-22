@@ -101,7 +101,7 @@ Single large set of images passed once.
 
 ```
 
-***Scen3-figure:**  
+**Scen3-figure:**  
 ![Scenario 3](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen3.png)
 
 
@@ -129,7 +129,7 @@ Single small set of images passed in intervals. In between passes, program is in
 
 ```
 
-***Scen4-figure:**  
+**Scen4-figure:**  
 ![Scenario 4](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen4.png)
 
 
@@ -150,7 +150,7 @@ Single set of images, with growing image-counts, passed in intervals. In between
 
 ```
 
-***Scen5-figure:**  
+**Scen5-figure:**  
 ![Scenario 5](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen5.png)
 
 
@@ -171,7 +171,7 @@ Single small set of images passed once, without sleep function.
 
 ```
 
-***Scen6-figure:**  
+**Scen6-figure:**  
 ![Scenario 6](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen6.png)
 
 
@@ -193,7 +193,7 @@ Single image passed once, without sleep function.
 
 ```
 
-***Scen7-figure:**  
+**Scen7-figure:**  
 ![Scenario 7](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen7.png)
 
 ## Conclusions
