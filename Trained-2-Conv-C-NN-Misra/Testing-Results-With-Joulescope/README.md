@@ -198,6 +198,11 @@ Single image passed once, without sleep function.
 
 ## Conclusions
 
+NN (Neural Network) was tested with variuous ways, to raise probability of produced data to match the actual   application. Tests included passing data in different intervals, with high and small image counts. Single passes   were also carried. What data and produced figures highlights, is that NN seems to be energy efficient.  
+
+todo:  
+{Explain values}  
+
 ## Raw testing-data:
 
 [csv-files](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)
