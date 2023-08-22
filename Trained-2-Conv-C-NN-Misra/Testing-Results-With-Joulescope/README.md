@@ -3,8 +3,32 @@
 **Things consired:**  
 
 * Before each test-scenario, Rpi has been in idle state for 5min, to reach maximum, non-load cpu-temperature.
-(Some reference number: 49.4 C)  
-* Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption.  
+
+* Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption. Some test ran also without
+to see, as sleep function is non-essential.
+
+***About value ranges***
+
+Plot unit ranges are based on following knowledge:
+
+Raspberry pi 3 B+ models benchmark values for current draw, according to pidreamble.com, is around: 350mA (idle-state) up to 980mA (heavy load)
+(https://www.pidramble.com/wiki/benchmarks/power-consumption)'. And the known working voltage range of mentioned Rpi model is: 4.75 - 5.25V.
+Therefore, we can obtain reasonable power consumption range:
+
+For power:
+
+- Min: (4,75 + 5.0V / 2) * 0.35A ≈ 1.7W
+ 
+- Max: (4,75 + 5.0V / 2) * 0.98A ≈ 4.78W
+
+However, it is worth mentioning, that measured idle power consumption of our Rpi configuration, never dropped below 2 Watts.
+Similarly, current draw never undercut 400mA and voltages lowerbound was lower than one in benchmark result, being as low as: ≈ 4.6V.
+To be more precise, down below are averages, calculated from Rpi's 10s idle data, measured with Joulescope DC Energy Analyser (Model version: JS110)
+
+Average Current: 0.43365014285714276
+Average Voltage: 4.7200709523809525
+Average Power: 2.0457033333333334
+
 
 ## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
 
@@ -32,10 +56,9 @@ Single small set of images passed once, with sleep function.
 
 ```
 
-**Figure:**  
+**Scen1-figure:**  
 ![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png)
 
-*****
 
 ```plaintext
 
@@ -55,7 +78,7 @@ Pass data
 
 ```
 
-**Figure:**  
+**Scen2-figure:**  
 ![Scenario 2](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen2.png)
 
 ```plaintext
@@ -78,7 +101,7 @@ Single large set of images passed once.
 
 ```
 
-**Figure:**  
+***Scen3-figure:**  
 ![Scenario 3](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen3.png)
 
 
@@ -106,7 +129,7 @@ Single small set of images passed in intervals. In between passes, program is in
 
 ```
 
-**Figure:**  
+***Scen4-figure:**  
 ![Scenario 4](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen4.png)
 
 
@@ -127,7 +150,7 @@ Single set of images, with growing image-counts, passed in intervals. In between
 
 ```
 
-**Figure:**  
+***Scen5-figure:**  
 ![Scenario 5](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen5.png)
 
 
@@ -148,7 +171,7 @@ Single small set of images passed once, without sleep function.
 
 ```
 
-**Figure:**  
+***Scen6-figure:**  
 ![Scenario 6](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen6.png)
 
 
@@ -170,7 +193,7 @@ Single image passed once, without sleep function.
 
 ```
 
-**Figure:**  
+***Scen7-figure:**  
 ![Scenario 7](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen7.png)
 
 ## Conclusions
