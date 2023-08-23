@@ -119,7 +119,8 @@ trained_model.h    : Contains pre trained data
 trained_nn_misra.c : Contains function call sequence, passes input to layers  
 
 **For testing purposes only**:  
-  
+  Optimised-V1 and Optimised-V2-For-Testing-Rpi  
+
 **(Only in Optimised-V1):**  
 dat_parser.h       : Function prototype, also contains defined numbers  
 dat_parser.c       : Tool for reading and storing test data to be passed to NN  
