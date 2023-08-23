@@ -43,7 +43,7 @@ Single large set of images passed once, without sleep function.
             /        Ns
 0s         2s        |                      +5s
 |-------------------Measure-------------------|
-|   --S->  |  --R->  |                        |
+|          |  --R->  |                        |
 
 
 Scen3:
