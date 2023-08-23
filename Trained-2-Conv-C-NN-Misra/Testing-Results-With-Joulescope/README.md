@@ -199,4 +199,15 @@ Single image passed once, without sleep function.
 
 NN (Neural Network) was tested with variuous ways, to raise probability of produced testing-data to match the behavior of the actual application. Tests included passing data in different intervals, with high and small image counts. Single passes were also carried.
 
-For single image passed through, rise in current draw was an average of 20,086 mA, up to 20.1 mA. However for 10 images passed through, current draw rise 58,775 mA. When larger set of images were passed with and without  intervals, current draw never exceeded 62.7mA. What conclusions can you draw from this, about programs energy consumption?
+For single image passed through, rise in current draw was an average of 20,086 mA, up to 20.1 mA. With 10 images passed through, current draw rise 58,775 mA. Noteworthy finding is that, when larger set of images were passed with and without intervals, current draw never exceeded 62.7mA. With voltage, similar findings were obtained. Single image caused on average voltage drop of 0.008 V and other forms of tests
+had voltage drops in range of 0.037 to 0.040 V.
+
+This indicates, that running the neural network on a batch of images is more energy-efficient than running it on individual images. Therefore batch processing allows for better utilization of resources and potentially reduces the overhead associated with starting and stopping the processing for each image.
+
+Also, the fact that the current draw for processing larger sets of images never exceeded 62.7mA suggests that there might be some level of diminishing returns in terms of energy consumption as the batch size increases. After a certain point, increasing the batch size further might not lead to significant increases in current draw, implying that the energy efficiency plateaus. This can also been seen as program-wise, as program simply repeats certain set of tasks for input data, and those tasks contribute for peaks in energy consumption.
+
+Findings suggests that there might be an optimal processing rate or interval that balances processing efficiency with energy consumption. Running the program with intervals could allow the system to "rest" between processing bursts, leading to more stable and efficient energy consumption.
+
+When thinking about optimization potential, the difference between the single image and batch processing current draws is quite significant (20,086mA againts 58,775mA). This suggests that there might be room for optimization in the neural network's code, to further improve energy efficiency. What those optimizations could be? Well, memory usage has already been quite well optimised, so solution may lie on reducing unnecessary computations and/or improving algorithmic efficiency.
+
+In summary, program seems already to be energy-efficient, in current state. The measurements indicates that batch processing is more energy-efficient than single-image processing, and there might be an optimal processing interval that helps balance processing efficiency and energy consumption. The observed current draws also suggest that there could be potential for further optimization to enhance the energy efficiency.

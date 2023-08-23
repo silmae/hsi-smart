@@ -127,7 +127,7 @@ dat_parser.c       : Tool for reading and storing test data to be passed to NN
 **(Only in Optimised-V2-For-Testing-Rpi)**:  
 inputs_for_testing.h : Contains four images, as C-arrays for testing and demonstration purposes  
 tests.h : Function prototype  
-tests.c : Contains separate funvtions, for different test-scenarios  
+tests.c : Contains separate functions, for different test-scenarios  
 
 ## Accuracy expectations, compared against original model (single image):
 
