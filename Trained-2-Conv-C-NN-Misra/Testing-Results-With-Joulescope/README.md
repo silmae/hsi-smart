@@ -57,7 +57,7 @@ Single small set of images passed once, with sleep function.
 ```
 
 **Scen1-figure:**  
-![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/sceen1.png)
+![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png)
 
 ```plaintext
 
