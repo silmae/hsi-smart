@@ -65,25 +65,19 @@ Scen2:
 
 Single large set of images passed once, without sleep function.
 
-      50 images
-     /
-Pass data
-   /
-  /
- /        Ns
-0s        |                      +3s
-|-------------Measure--------------|
-|  --R->  |                        |
-
+                 50 images
+                /
+           Pass data
+              /
+             /
+            /        Ns
+0s         2s        |                      +5s
+|-------------------Measure-------------------|
+|   --S->  |  --R->  |                        |
+           
 ```
 
-**Scen2-figure:**  
-![Scenario 2](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen2.png)
-
-```plaintext
-
-Scen3:
-
+**Scen2-figure:**  https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png
 Single large set of images passed once.
 
                                50 images

@@ -35,15 +35,15 @@ Scen2:
 
 Single large set of images passed once, without sleep function.
 
-      50 images
-     /
-Pass data
-   /
-  /
- /        Ns
-0s        |                      +3s
-|-------------Measure--------------|
-|  --R->  |                        |
+                 50 images
+                /
+           Pass data
+              /
+             /
+            /        Ns
+0s         2s        |                      +5s
+|-------------------Measure-------------------|
+|   --S->  |  --R->  |                        |
 
 
 Scen3:
