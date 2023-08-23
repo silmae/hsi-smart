@@ -1,5 +1,5 @@
 #ifndef TOOLS_H
-#define TOOLs_H
+#define TOOLS_H
 #include <stdio.h>
 
 #define C1IC 1 /* Input channels of the first convolution */
