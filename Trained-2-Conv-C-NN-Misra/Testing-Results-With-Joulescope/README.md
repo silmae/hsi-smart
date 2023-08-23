@@ -202,6 +202,3 @@ NN (Neural Network) was tested with variuous ways, to raise probability of produ
 todo:  
 {Explain values}  
 
-## Raw testing-data:
-
-[csv-files](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)
