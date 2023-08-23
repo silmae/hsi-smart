@@ -116,7 +116,7 @@ Program (V2) contains only code necessary, and is stripped from use of developme
 tools.h            : Function prototype, also contains defined numbers, like kernel counts etc.  
 tools.c            : Contains functionality and layers  
 trained_model.h    : Contains pre trained data  
-trained_nn_misra.c : Passes input to layers  
+trained_nn_misra.c : Contains function call sequence, passes input to layers  
 
 **For testing purposes only**:  
   

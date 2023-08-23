@@ -197,8 +197,6 @@ Single image passed once, without sleep function.
 
 ## Conclusions
 
-NN (Neural Network) was tested with variuous ways, to raise probability of produced data to match the actual   application. Tests included passing data in different intervals, with high and small image counts. Single passes   were also carried. What data and produced figures highlights, is that NN seems to be energy efficient.  
+NN (Neural Network) was tested with variuous ways, to raise probability of produced testing-data to match the behavior of the actual application. Tests included passing data in different intervals, with high and small image counts. Single passes were also carried.
 
-todo:  
-{Explain values}  
-
+For single image passed through, rise in current draw was an average of 20,086 mA, up to 20.1 mA. However for 10 images passed through, current draw rise 58,775 mA. When larger set of images were passed with and without  intervals, current draw never exceeded 62.7mA. What conclusions can you draw from this, about programs energy consumption?
