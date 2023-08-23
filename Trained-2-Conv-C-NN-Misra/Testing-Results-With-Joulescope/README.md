@@ -7,7 +7,7 @@
 * Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption. Some test ran also without
 to see, as sleep function is non-essential.
 
-* Usage of display (for Rpi) and excess resistance in connections, with measuring-tool, does not affect end-results, as configurations idle-values are used as contrast point.
+* Usage of display (for Rpi) and excess resistance in connections, with measuring-tool, does not affect end-results, as configuration's idle-values are used as contrast point.
 
 **About figures and their value ranges**
 
@@ -16,8 +16,6 @@ Plot unit ranges are based on following knowledge:
 Raspberry pi 3 B+ models benchmark values for current draw, according to pidreamble.com, is around: 350mA (idle-state) up to 980mA (heavy load)
 (https://www.pidramble.com/wiki/benchmarks/power-consumption)'. And the known working voltage range of mentioned Rpi model is: 4.75 - 5.25V.
 Therefore, we can obtain reasonable power range:
-
-For power:
 
 - Min: (4,75 + 5.0V / 2) * 0.35A ≈ 1.7W
  
@@ -32,7 +30,7 @@ To be more precise, down below are averages, calculated from Rpi's 10s idle data
 **Average Power**: 2.04570 W  
 
 
-## Visualization of test scenarios and results achieved, with Joulescope DC energy anayoulyzer:
+## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
 
 **S**=Sleep    
 **R**=Run
