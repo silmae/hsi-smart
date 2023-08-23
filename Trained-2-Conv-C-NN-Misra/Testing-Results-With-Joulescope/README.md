@@ -77,7 +77,13 @@ Single large set of images passed once, without sleep function.
            
 ```
 
-**Scen2-figure:**  https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png
+**Scen2-figure:**  
+![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png)
+
+```plaintext
+
+Scen3:
+
 Single large set of images passed once.
 
                                50 images
