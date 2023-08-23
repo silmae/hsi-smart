@@ -7,6 +7,8 @@
 * Time-library's sleep-function has been utlized, to contrast spikes in energy-consumption. Some test ran also without
 to see, as sleep function is non-essential.
 
+* Usage of display (for Rpi) and excess resistance in connections, with measuring-tool, does not affect end-results, as configurations idle-values are used as contrast point.
+
 **About figures and their value ranges**
 
 Plot unit ranges are based on following knowledge:
@@ -30,7 +32,7 @@ To be more precise, down below are averages, calculated from Rpi's 10s idle data
 **Average Power**: 2.04570 W  
 
 
-## Visualization of test scenarios and results achieved, with Joulescope DC energy analyzer:
+## Visualization of test scenarios and results achieved, with Joulescope DC energy anayoulyzer:
 
 **S**=Sleep    
 **R**=Run
@@ -58,7 +60,6 @@ Single small set of images passed once, with sleep function.
 
 **Scen1-figure:**  
 ![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png)
-
 
 ```plaintext
 
