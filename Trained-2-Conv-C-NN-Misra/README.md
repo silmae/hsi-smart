@@ -148,5 +148,5 @@ Uses mostly built in libraries, with -lm, linking against math library
 **$** ./program  
 
 ## Testing related:
-[Results and conclusions](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)  
+[Results and conclusions](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)  
 [Modified program for testing](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Optimised-V2-For-Testing-Rpi)  
