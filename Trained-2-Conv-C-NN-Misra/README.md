@@ -112,7 +112,7 @@ Program (V2) contains only code necessary, and is stripped from use of developme
          
 ## Task distribution of the C-implementation:
 
-**Necessary**:  
+**Necessary (Optimised-V2)**:  
 tools.h            : Function prototype, also contains defined numbers, like kernel counts etc.  
 tools.c            : Contains functionality and layers  
 trained_model.h    : Contains pre trained data  
@@ -120,12 +120,15 @@ trained_nn_misra.c : Contains function call sequence, passes input to layers
 
 **For testing purposes only**:  
   
-**(Only in Optimised V1):**  
+**(Only in Optimised-V1):**  
 dat_parser.h       : Function prototype, also contains defined numbers  
 dat_parser.c       : Tool for reading and storing test data to be passed to NN  
 
 **(Only in Optimised-V2-For-Testing-Rpi)**:  
 inputs_for_testing.h : Contains four images, as C-arrays for testing and demonstration purposes  
+tests.h : Function prototype  
+tests.c : Contains separate funvtions, for different test-scenarios  
+
 ## Accuracy expectations, compared against original model (single image):
 
 | C-predictions | Python-predictions |
