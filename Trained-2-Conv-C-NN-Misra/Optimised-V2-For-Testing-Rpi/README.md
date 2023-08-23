@@ -130,4 +130,4 @@ Single image passed once, without sleep function.
 
 ## Results of testing:
 
-[Tested scenarios (.csv-files)](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)
+[Tested scenarios](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope)
