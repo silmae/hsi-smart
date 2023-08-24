@@ -9,6 +9,8 @@ to see, as sleep function is non-essential.
 
 * Usage of display (for Rpi) and excess resistance in connections, with measuring-tool, does not affect end-results, as configuration's idle-values are used as contrast point.
 
+* Ten tests were performed for each scenario and averages per time steps calculated to normalize data.
+
 **About figures and their value ranges**
 
 Plot unit ranges are based on following knowledge:
