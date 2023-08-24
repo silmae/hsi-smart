@@ -1,8 +1,7 @@
 import pandas as pd
 
 # List of .CSV files
-csv_files = ["scen1_1.csv", "scen1_2.csv", "scen1_3.csv", "scen1_4.csv", "scen1_5.csv", "scen1_6.csv", "scen1_7.csv", "scen1_8.csv", "scen1_9.csv", "scen1_10.csv"]
-
+csv_files = ["./scen1/scen1_1.csv", "./scen1/scen1_2.csv", "./scen1/scen1_3.csv", "./scen1/scen1_4.csv", "./scen1/scen1_5.csv", "./scen1/scen1_6.csv", "./scen1/scen1_7.csv", "./scen1/scen1_8.csv", "./scen1/scen1_9.csv", "./scen1/scen1_10.csv"]
 # Initializing a dictionary to store time-step averages for each column
 time_step_averages = {}
 
