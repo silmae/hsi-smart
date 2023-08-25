@@ -201,8 +201,9 @@ Single image passed once, without sleep function.
 
 NN (Neural Network) was tested with variuous ways, to raise probability of produced testing-data to match the behavior of the actual application. Tests included passing data in different intervals, with high and small image counts. Single passes were also carried.
 
-For single image passed through, rise in current draw was an average of 20,086 mA, up to 20.1 mA. With 10 images passed through, current draw rise 58,775 mA. Noteworthy finding is that, when larger set of images were passed with and without intervals, current draw never exceeded 62.7mA. With voltage, similar findings were obtained. Single image caused on average voltage drop of 0.008 V and other forms of tests
-had voltage drops in range of 0.037 to 0.040 V.
+For single image passed through, rise in current draw was an average of 20,014 mA (with 10 tests). With 10 images passed through, current draw saw an average rise of 47,219 mA. Noteworthy finding is that, when larger set of images were passed with and without intervals, current draw never exceeded 72mA. With voltage, similar findings were obtained. Single image caused on average voltage drop of 0.034 V and other forms of tests
+had voltage drops in range of 0.039 to 0.080 V. It is also notable, that usage of sleep-function seemed to contribute significantly to rises 
+in measured values. Phenomenom can be seen in two ways, reloading repeatedly resources needed, indeed consumes energy, but sleep-function may itself be costly.
 
 This indicates, that running the neural network on a batch of images is more energy-efficient than running it on individual images. Therefore batch processing allows for better utilization of resources and potentially reduces the overhead associated with starting and stopping the processing for each image.
 
