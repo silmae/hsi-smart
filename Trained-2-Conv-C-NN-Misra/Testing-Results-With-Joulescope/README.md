@@ -80,7 +80,7 @@ Single large set of images passed once, without sleep function.
 ```
 
 **Scen2-figure:**  
-![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen1.png)
+![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results-With-Joulescope/Plotting/Images/scen2.png)
 
 ```plaintext
 
