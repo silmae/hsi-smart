@@ -224,6 +224,9 @@ Also, the fact that the current draw for processing larger sets of images never 
 
 Findings suggests that there might be an optimal processing rate or interval that balances processing efficiency with energy consumption. Running the program with intervals could allow the system to "rest" between processing bursts, leading to more stable and efficient energy consumption.
 
+The program's memory requirements were determined through Valgrind analysis, revealing a total of 190,184 bytes allocated. This translates to 
+0.190184 megabytes. Additionally, when executing with single 1D signal, the program demonstrated efficient performance with real execution time of 0.087   seconds, 0.070 seconds of user CPU time, and 0.018 seconds of system CPU time.  
+
 When thinking about optimization potential, the difference between the single image and batch processing current draws is quite significant (20.014mA againts 71.25mA). This suggests that there might be room for optimization in the neural network's code, to further improve energy efficiency. What those optimizations could be? Well, memory usage has already been quite well optimised, so possibility of finding and reducing unnecessary computations and/or improving algorithmic efficiency should be noted.
 
 In summary, program seems already to be energy-efficient, in current state. The measurements indicates that batch processing is more energy-efficient than single-image processing, and there might be an optimal processing interval that helps balance processing efficiency and energy consumption. The observed current draws also suggest that there could be potential for further optimization to enhance the energy efficiency.
