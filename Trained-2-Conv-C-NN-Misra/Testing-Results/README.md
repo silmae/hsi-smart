@@ -201,7 +201,11 @@ Single image passed once, without sleep function.
 For analyzing memory consumption, Valgrind framework was utilized and execution time was measured
 with Unix command-line utility, "time."
 
-**Required memory**
+**Required memory, valgrind output**
+Total heap usage: 4,027 allocs, 4027 frees, 190,184 bytes allocated
+Therefore, 0.190184 MB were allocated
+
+Resident Set Size:
 
 **Excecution time, single 1D-signal passed (Scen 7)**
 real: 0.087s
