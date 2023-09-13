@@ -203,8 +203,10 @@ with Unix command-line utility, "time."
 
 **Required memory**
 
-**Excecution time, single 1D-signal passed**
-
+**Excecution time, single 1D-signal passed (Scen 7)**
+real: 0.087s
+user: 0.070s
+sys:  0.018s
 
 ## Conclusions
 
