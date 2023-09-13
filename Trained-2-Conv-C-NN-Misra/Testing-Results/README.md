@@ -198,8 +198,12 @@ Single image passed once, without sleep function.
 ![Scenario 7](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen7.png)
 
 ## Memory consumption and execution time
-For analyzing memory consumption, Valgrind framework was utilized.
-Measurements:
+For analyzing memory consumption, Valgrind framework was utilized and execution time was measured
+with Unix command-line utility, "time."
+
+**Required memory**
+
+**Excecution time, single 1D-signal passed**
 
 
 ## Conclusions
