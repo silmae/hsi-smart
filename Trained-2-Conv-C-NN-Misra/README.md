@@ -148,7 +148,7 @@ tests.c : Contains separate functions, for different test-scenarios
 ## Compiling:
 Uses mostly built in libraries, with -lm, linking against math library  
 
-**$** gcc trained_nn_misra.c tools.c -lm -o program  
+**$** gcc trained_nn_misra.c tools.c trained_model.c -lm -o program  
 **$** ./program  
 
 ## Testing related:
