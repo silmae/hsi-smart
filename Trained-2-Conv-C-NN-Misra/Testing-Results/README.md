@@ -59,7 +59,7 @@ Single small set of images passed once, with sleep function.
 ```
 
 **Scen1-figure:**  
-![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen1.png)
+![Scenario 1](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen1.png)
 
 ```plaintext
 
@@ -80,7 +80,7 @@ Single large set of images passed once, without sleep function.
 ```
 
 **Scen2-figure:**  
-![Scenario 1](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen2.png)
+![Scenario 1](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen2.png)
 
 ```plaintext
 
@@ -103,7 +103,7 @@ Single large set of images passed once.
 ```
 
 **Scen3-figure:**  
-![Scenario 3](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen3.png)
+![Scenario 3](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen3.png)
 
 
 ```plaintext
@@ -131,7 +131,7 @@ Single small set of images passed in intervals. In between passes, program is in
 ```
 
 **Scen4-figure:**  
-![Scenario 4](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen4.png)
+![Scenario 4](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen4.png)
 
 
 ```plaintext
@@ -152,7 +152,7 @@ Single set of images, with growing image-counts, passed in intervals. In between
 ```
 
 **Scen5-figure:**  
-![Scenario 5](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen5.png)
+![Scenario 5](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen5.png)
 
 
 ```plaintext
@@ -173,7 +173,7 @@ Single small set of images passed once, without sleep function.
 ```
 
 **Scen6-figure:**  
-![Scenario 6](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen6.png)
+![Scenario 6](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen6.png)
 
 
 ```plaintext
@@ -195,7 +195,7 @@ Single image passed once, without sleep function.
 ```
 
 **Scen7-figure:**  
-![Scenario 7](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/raw/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen7.png)
+![Scenario 7](https://github.com/silmae/hsi-smart/blob/main/Trained-2-Conv-C-NN-Misra/Testing-Results/Plotting/Images/scen7.png)
 
 ## Memory consumption and execution time
 For analyzing memory consumption, Valgrind framework was utilized and execution time was measured
