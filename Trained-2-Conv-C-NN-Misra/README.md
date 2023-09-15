@@ -153,4 +153,4 @@ Uses mostly built in libraries, with -lm, linking against math library
 
 ## Testing related:
 [Results and conclusions](https://github.com/silmae/hsi-smart/tree/main/Trained-2-Conv-C-NN-Misra/Testing-Results)  
-[Modified program for testing](https://gitlab.jyu.fi/hsi/code/hsi-smart/-/tree/main/Trained-2-Conv-C-NN-Misra/Optimised-V2-For-Testing-Rpi)  
+[Modified program for testing](https://github.com/silmae/hsi-smart/tree/main/Trained-2-Conv-C-NN-Misra/Optimised-V2-For-Testing-Rpi)  
